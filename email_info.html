@@ -1,0 +1,208 @@
+<?php
+					
+					sleep(3);
+					header("Location: index.html");
+					exit();
+?>
+<?php
+
+	session_start();
+
+		
+	
+	/*if ((isset($_SESSION['zalogowany'])) && ($_SESSION['zalogowany']==true))
+	{
+		header('Location: gra.php');
+		exit();
+	}
+*/
+?>
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	
+	<title>Kontakt - potwierdzenie </title>
+	<meta name="description" content="Potwierdzenie wysłania wiadomości e-mail" />
+	<meta name="keywords" content="" />
+	<meta name="author" content="Krzysztof Jaworski" />
+	<meta http-equiv="X-Ua-Compatible" content="IE=edge" />
+	
+	<link rel="stylesheet" href="css/fontello.css" type="text/css" />
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
+
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=latin-ext" rel="stylesheet" />
+	<!--<link rel="stylesheet" href="css/style.css" type="text/css" />-->
+	<link rel="stylesheet" href="css/formul.css" type="text/css" />
+	<link rel="stylesheet" href="main.css" />
+
+	
+	<!--[if lt IE 9]>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+	<![endif]-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	
+	
+	
+	
+</head>
+
+<body>
+	
+	<header>
+	
+		<nav class="navbar navbar-dark bg-jumpers navbar-expand-lg">
+		
+			<a class="navbar-brand" href="#"><img src="img/logo_partner_iluo.png" width="200"   class="d-inline-block mr-1 align-bottom" alt="Oprogramowanie dla firm"><span class="logo"></span></a>
+		
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainmenu" aria-controls="mainmenu" aria-expanded="false" aria-label="Przełącznik nawigacji">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+		
+			<div class="collapse navbar-collapse" id="mainmenu">
+			
+				<ul class="navbar-nav mr-auto">
+				
+					<!--<li class="nav-item active">-->
+					<li class="nav-item">
+						<a class="nav-link" href="index.html"> Start </a>
+					</li>
+					
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-expanded="false" id="submenu" aria-haspopup="true">Oprogramowanie</a>
+						
+						<div class="dropdown-menu" aria-labelledby="submenu">
+						
+							<a class="dropdown-item" href="#"> ILUO Biznes</a>
+							<a class="dropdown-item" href="#"> ILUO Faktura </a>
+							
+							<!--<div class="dropdown-divider"></div>-->
+							
+							<a class="dropdown-item" href="#"> SHOPER </a>
+
+						
+						</div>
+						
+					</li>
+					
+					<li class="nav-item">
+						<a class="nav-link" href="#">Cennik</a>
+					</li>
+					
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-expanded="false" id="a1submenu" aria-haspopup="true">Baza wiedzy</a>
+						
+						<div class="dropdown-menu" aria-labelledby="a1submenu">
+						
+							<a class="dropdown-item" href="#">Filmy instruktażowe ILUO Biznes</a>
+							<a class="dropdown-item" href="#">Instrukcje obsługi ILUO Biznes</a>
+							
+							<!--<div class="dropdown-divider"></div>-->
+							
+							<a class="dropdown-item" href="#">Wersje programu ILUO Biznes</a>
+
+						
+						</div>
+						
+					</li>
+					
+					
+					
+					
+					
+					
+					<!--<li class="nav-item">
+						<a class="nav-link" href="#">Regulamin</a>
+					</li> -->
+					
+					<!--<li class="nav-item">
+						<a class="nav-link disabled" href="#"> Wywiady </a>
+					</li> -->
+					
+					<li class="nav-item">
+						<a class="nav-link" href="formularz.html" target="_blank">Kontakt</a>
+					</li>
+				
+				</ul>
+			<!--
+				<form class="form-inline">
+				
+					<input class="form-control mr-1" type="search" placeholder="Wyszukaj" aria-label="Wyszukaj">
+					<button class="btn btn-light" type="submit">Znajdź</button>
+				
+				</form>
+			-->
+			
+				<span class="shoper">SHOPER<br></spam><spam class="shoper_sklep"> &nbsp&nbsp&nbsp&nbsp&nbsp&nbspPARTNER&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp </spam>
+			</div>
+		
+		</nav>
+	
+	</header>
+	
+	<main>
+		<!--<section class="formularz">
+			<!--<div class="col-sm-6 col-md-6 " id="container" >
+				<form>
+					
+					<input type="text" placeholder="login" onfocus="this.placeholder=''" onblur="this.placeholder='login'" >
+					
+					<input type="password" placeholder="hasło" onfocus="this.placeholder=''" onblur="this.placeholder='hasło'" >
+					
+					<input type="submit" value="Zaloguj się">
+					
+				</form>
+			</div>-->
+			
+			
+			
+			<div class="col-sm-6 col-md-12 box box2">
+				<h1>Dziękujemy za wysłanie wiadomości </h1>
+				<a href="index.html"><div class="klawisz">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspOk!&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<div></a>
+			
+			</div>
+				
+			</div>
+				
+	</main>
+	
+	<div class="stopka">Dziękujemy za odwiedzenie naszej strony :)</div>
+	
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	
+	<script src="js/bootstrap.min.js"></script>
+	
+	<script>
+
+	$( document ).ready( function () {
+		$( '.dropdown' ).on( 'click', function ( e ) {
+			var $el = $( this );
+			var $parent = $( this ).offsetParent( ".dropdown-menu" );
+			if ( !$( this ).next().hasClass( 'show' ) ) {
+				$( this ).parents( '.dropdown-menu' ).first().find( '.show' ).removeClass( "show" );
+			}
+			var $subMenu = $( this ).next( ".dropdown-menu" );
+			$subMenu.toggleClass( 'show' );
+			
+			$( this ).parent( "li" ).toggleClass( 'show' );
+
+			$( this ).parents( 'li.nav-item.dropdown.show' ).on( 'hidden.bs.dropdown', function ( e ) {
+				$( '.dropdown-menu .show' ).removeClass( "show" );
+			} );
+			
+			 if ( !$parent.parent().hasClass( 'navbar-nav' ) ) {
+				$el.next().css( { "top": $el[0].offsetTop, "left": $parent.outerWidth() - 4 } );
+			}
+
+			return false;
+		} );
+	} );
+	
+	</script>
+	
+</body>
+</html>

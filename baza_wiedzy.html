@@ -1,0 +1,137 @@
+<?php
+
+	session_start();
+
+?>
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+	<title>Baza wiedzy iluobiznes.pl</title>
+	<meta name="description" content="instrukcja obsługi, baza wiedzy">
+	<meta name="keywords" content="instrukcja, oprogramowanie ILUO, ILUO Biznes ">
+	<meta name="author" content="Krzysztof Jaworski">
+	<meta http-equiv="X-Ua-Compatible" content="IE=edge">
+	
+	<link rel="stylesheet" href="css/fontello.css" type="text/css" />
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=latin-ext" rel="stylesheet">
+	<!--<link rel="stylesheet" href="css/style.css" type="text/css" />-->
+	<link rel="stylesheet" href="css/formul.css" type="text/css" />
+	<link rel="stylesheet" href="main.css">
+
+	
+	<!--[if lt IE 9]>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+	<![endif]-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	
+	
+	
+	
+</head>
+
+<body>
+	
+	<header>
+	
+		<nav class="navbar navbar-dark bg-jumpers navbar-expand-lg">
+		
+			<a class="navbar-brand" href="index.html"><img src="img/logo_partner_iluo.png" width="200"   class="d-inline-block mr-1 align-bottom" alt="Oprogramowanie dla firm"><span class="logo"></span></a>
+		
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainmenu" aria-controls="mainmenu" aria-expanded="false" aria-label="Przełącznik nawigacji">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+		
+			<div class="collapse navbar-collapse" id="mainmenu">
+			
+				<ul class="navbar-nav mr-auto">
+				
+					<li class="nav-item">
+						<a class="nav-link" href="index.html"> ILUO </a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="shoper.html"> SHOPER </a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="baza_wiedzy.html"> Baza wiedzy </a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="regulamin.html"> Regulamin </a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="kontakt.html"> Kontakt </a>
+					</li>
+					
+					
+				</ul>
+			
+				<span class="shoper">SHOPER<br></spam><spam class="shoper_sklep"> &nbsp&nbsp&nbsp&nbsp&nbsp&nbspPARTNER&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp </spam>
+			</div>
+		
+		</nav>
+	
+	</header>
+	
+	<main>
+		
+			
+			
+			<div class="col-sm-6 col-md-12 box box1">
+				<h1>Baza wiedzy</h1>
+				
+				<h5><br><br>Strona w przygotowaniu - zapraszamy wkrótce
+				<br><h5>
+				<br><br><br><br><br><br><br><br>
+				<br><br><br><br><br><br><br><br>
+				<br><br><br>
+			</div>
+				
+			</div>
+		<!--</section>-->			
+		
+
+	</main>
+	
+	<div class="stopka">Dziękujemy za odwiedzenie naszej strony :)</div>
+	
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	
+	<script src="js/bootstrap.min.js"></script>
+	
+	<script>
+
+	$( document ).ready( function () {
+		$( '.dropdown' ).on( 'click', function ( e ) {
+			var $el = $( this );
+			var $parent = $( this ).offsetParent( ".dropdown-menu" );
+			if ( !$( this ).next().hasClass( 'show' ) ) {
+				$( this ).parents( '.dropdown-menu' ).first().find( '.show' ).removeClass( "show" );
+			}
+			var $subMenu = $( this ).next( ".dropdown-menu" );
+			$subMenu.toggleClass( 'show' );
+			
+			$( this ).parent( "li" ).toggleClass( 'show' );
+
+			$( this ).parents( 'li.nav-item.dropdown.show' ).on( 'hidden.bs.dropdown', function ( e ) {
+				$( '.dropdown-menu .show' ).removeClass( "show" );
+			} );
+			
+			 if ( !$parent.parent().hasClass( 'navbar-nav' ) ) {
+				$el.next().css( { "top": $el[0].offsetTop, "left": $parent.outerWidth() - 4 } );
+			}
+
+			return false;
+		} );
+	} );
+	
+	</script>
+	
+</body>
+</html>
